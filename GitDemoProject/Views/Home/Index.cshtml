@@ -5,4 +5,23 @@
 <div class="text-center">
     <h1 class="display-4">Welcome Jawad</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form asp-controller="Home" asp-action="SaveData">
+        <div class="form-group">
+            <div class="form-check-label">
+                Value 1
+            </div>
+            <div class="form-control">
+                <input type="text" id="Value1" />
+            </div>
+            <div class="form-check-label">
+                Value 2
+            </div>
+            <div class="form-control">
+                <input type="text" id="Value2" />
+            </div>
+            <div class="form-control">
+                <input type="submit" value="Save"/>
+            </div>
+        </div>
+    </form>
 </div>

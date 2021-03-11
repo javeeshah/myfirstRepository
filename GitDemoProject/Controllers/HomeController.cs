@@ -38,5 +38,11 @@ namespace GitDemoProject.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpPost]
+        public IActionResult SaveData(int a, int b)
+        {
+            return RedirectToAction("Home");
+        }
     }
 }
